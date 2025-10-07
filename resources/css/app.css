@@ -1,19 +1,8 @@
-@import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Pagination & Blade sources */
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
 
-/* Theme */
-@theme {
-    --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
-/* Global styles */
 body {
   @apply bg-gray-100 text-gray-700 font-sans;
 }
@@ -38,7 +27,7 @@ p {
   @apply my-2;
 }
 
-/* Header */
+
 header {
   @apply bg-white;
 
@@ -51,7 +40,6 @@ header {
   }
 }
 
-/* Form elements */
 form {
   @apply max-w-screen-sm;
 }
@@ -60,7 +48,6 @@ input, select, textarea {
   @apply block w-full mt-2 mb-4 p-2;
 }
 
-/* Custom classes */
 .container {
   @apply max-w-screen-lg mx-auto px-12 py-8;
 }
