@@ -1,5 +1,5 @@
 <?php
-use app\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\NinjaController;
 use Illuminate\Support\Facades\Route;
 
